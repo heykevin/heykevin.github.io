@@ -61,7 +61,7 @@ li a:hover {
 }
 
 .main {
-    padding: 0 4em 2em 4em;
+    padding: 5em 4em 5em 4em;
     border-top: solid 1px rgb(212, 212, 200);
     border-radius: 5px;
 }
@@ -149,7 +149,7 @@ li a:hover {
 
 .skill-list {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 
@@ -166,6 +166,17 @@ li a:hover {
     border-bottom: 0.01em solid rgb(0, 107, 108);
 }
 
-.skill-logo:after {
+.skill-header {
+    font-size: 1.2em;
+    padding-bottom: 0.5em;
+}
+
+.footer {
+    padding: 4em 0 0 9em;
+    color: white;
+}
+
+.footer h2 {
+    text-align: left;
 
 }

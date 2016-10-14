@@ -1,8 +1,26 @@
 <!DOCTYPE HTML>
 <html>
-	<link rel="stylesheet" type="text/css" href="assets/css/nice.css">
-	<link rel="stylesheet" href="assets/fonts/font-awesome-4.6.3/css/font-awesome.min.css">
 	<head>
+		<link rel="stylesheet" type="text/css" href="assets/css/nice.css">
+		<link rel="stylesheet" href="assets/fonts/font-awesome-4.6.3/css/font-awesome.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script>
+			// From https://css-tricks.com/snippets/jquery/smooth-scrolling/
+			$(function() {
+				$('a[href*="#"]:not([href="#"])').click(function() {
+					if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+					var target = $(this.hash);
+					target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+					if (target.length) {
+						$('html, body').animate({
+						scrollTop: target.offset().top
+						}, 1000);
+						return false;
+					}
+					}
+				});
+			});
+		</script>
 		<meta charset="utf-8" />
 		<title>Kevin Tang</title>
 	</head>
@@ -86,7 +104,7 @@
 									<!-- The breaks in the middle of text is pretty dumb 
 									but I've already spent too much time here'-->
 									<p>
-										<span class="skill-header">Software Development</span>
+										<span class="skill-header">Software Development</span><br><br>
 										
 									</p>
 								</li>
@@ -95,7 +113,7 @@
 										<i class="fa fa-html5" aria-hidden="true"></i>
 									</span>
 									<p>
-										<span class="skill-header">Full Stack Web Development</span>
+										<span class="skill-header">Full Stack Web Development</span><br><br>
 										Worked under a Dr. Kirst King-Jones <br>to conduct a genetic 
 										screen of Drosophila. Project went on to be published in
 										Developmental Cell June 2016.
@@ -106,7 +124,7 @@
 										<i class="fa fa-android" aria-hidden="true"></i>
 									</span>
 									<p>
-										<span class="skill-header">Mobile Development</span>
+										<span class="skill-header">Mobile Development</span><br><br>
 										Worked under a Dr. Kirst King-Jones <br>to conduct a genetic 
 										screen of Drosophila. Project went on to be published in
 										Developmental Cell June 2016.
@@ -115,10 +133,12 @@
 							</ul>
 						</div>
 				</section>
-				
-				<section id="third" class="main">
-				</section>
-			</div>
+			</div>		
 		</div>
+		<section id="third" class="footer">
+			<div class="sec-header">
+				<h2>Contact Me</h2>
+			</div>
+		</section>
 	</body>
 </html>
