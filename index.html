@@ -1,25 +1,28 @@
 <!DOCTYPE HTML>
 <html>
 	<link rel="stylesheet" type="text/css" href="assets/css/nice.css">
+	<link rel="stylesheet" href="assets/fonts/font-awesome-4.6.3/css/font-awesome.min.css">
 	<head>
 		<meta charset="utf-8" />
 		<title>Kevin Tang</title>
 	</head>
    <body>
-		<div class="navbar">
-			<ul>
-				<li><a href="#intro">Introduction</a></li>
-				<li><a href="#first">First Section</a></li>
-				<li><a href="#second">Second Section</a></li>
-				<li><a href="#third">Third Section</a></li>
-			</ul>
-		</div>
+	   <nav>
+			<div class="navbar">
+				<ul>
+					<li><a href="#intro">Introduction</a></li>
+					<li><a href="#first">First Section</a></li>
+					<li><a href="#second">Second Section</a></li>
+					<li><a href="#third">Third Section</a></li>
+				</ul>
+			</div>
+		</nav>
 		<div class="wrapper">
 			<div class="main-sections">
 				<section id="intro" class="main">
 					<div class="content">
 						<div class="greeting-header">
-							<h2>Hi I'm Kevin,</h2>
+							<h2>Hi I'm <span class="name"> Kevin </span></h2>
 						</div>
 						<div class="profile">
 							<p>Sed lorem ipsum dolor sit amet nullam consequat feugiat consequat magna
@@ -61,7 +64,7 @@
 								<p class="hover-text">
 									<b>Summer Research Student</b><br>
 									<b>Edmonton CA</b><br><br>
-									Worked under a Dr. Kirst King-Jones <br>to conduct a genetic 
+									Worked under Dr. Kirst King-Jones <br>to conduct a genetic 
 									screen of Drosophila. Project went on to be published in
 									Developmental Cell June 2016.
 								</p>
@@ -75,21 +78,45 @@
 						<div class="sec-header">
 							<h2>My Skills</h2>
 						</div>
-						<p>Sed lorem ipsum dolor sit amet nullam consequat feugiat consequat magna
-						adipiscing magna etiam amet veroeros. Lorem ipsum dolor tempus sit cursus.
-						Tempus nisl et nullam lorem ipsum dolor sit amet aliquam.</p>
+							<ul class="skill-list">
+								<li class="skill-item">
+									<span class="skill-logo">
+										<i class="fa fa-code" aria-hidden="true"></i>
+									</span>
+									<!-- The breaks in the middle of text is pretty dumb 
+									but I've already spent too much time here'-->
+									<p>
+										<span class="skill-header">Software Development</span>
+										
+									</p>
+								</li>
+								<li class="skill-item">
+									<span class="skill-logo">
+										<i class="fa fa-html5" aria-hidden="true"></i>
+									</span>
+									<p>
+										<span class="skill-header">Full Stack Web Development</span>
+										Worked under a Dr. Kirst King-Jones <br>to conduct a genetic 
+										screen of Drosophila. Project went on to be published in
+										Developmental Cell June 2016.
+									</p>
+								</li>
+									<li class="skill-item">
+									<span class="skill-logo">
+										<i class="fa fa-android" aria-hidden="true"></i>
+									</span>
+									<p>
+										<span class="skill-header">Mobile Development</span>
+										Worked under a Dr. Kirst King-Jones <br>to conduct a genetic 
+										screen of Drosophila. Project went on to be published in
+										Developmental Cell June 2016.
+									</p>
+								</li>
+							</ul>
 						</div>
 				</section>
 				
 				<section id="third" class="main">
-					<div class="content">
-						<div class="sec-header">
-							<h2>Contact Me</h2>
-						</div>
-						<p>Sed lorem ipsum dolor sit amet nullam consequat feugiat consequat magna
-						adipiscing magna etiam amet veroeros. Lorem ipsum dolor tempus sit cursus
-						Tempus nisl et nullam lorem ipsum dolor sit amet aliquam.</p>
-						</div>
 				</section>
 			</div>
 		</div>
