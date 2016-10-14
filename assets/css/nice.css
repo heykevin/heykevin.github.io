@@ -217,11 +217,6 @@ li a:hover {
 }
 
 .footer-contact-links a {
-    color: white;
-    text-decoration: none;
-}
-
-.footer-contact-links a {
     color: inherit;
     text-decoration: none;
 }
